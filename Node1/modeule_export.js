@@ -15,9 +15,23 @@ function binarySearch(arr, x){
     }
     return NaN;
 }
+
+export default function fun(){
+    console.log("fun");
+}
+
 console.log("ending");
 
-module.exports = {
-    linear : linearSearch,
-    bianry : binarySearch
+// export{
+//     linearSearch,
+//     binarySearch
+// };
+export{
+    linearSearch as func1,
+    binarySearch as func2
 };
+
+// module.exports = {
+//     linear : linearSearch,
+//     bianry : binarySearch
+// };
